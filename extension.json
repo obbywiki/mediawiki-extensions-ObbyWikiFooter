@@ -1,0 +1,86 @@
+{
+	"manifest_version": 2,
+	"config_prefix": "wg",
+	"name": "ObbyWikiFooter",
+	"description": "Designed for Citizen. Replaces the default Citizen footer with a custom footer HTML for the Obby Wiki.",
+	"author": ["[https://obbywiki.com ObbyWiki]", "WOU", "Wolfite"],
+	"version": "1.0.0",
+	"license-name": "MIT",
+	"url": "https://github.com/obbywiki/mediawiki-extensions-ObbyWikiFooter",
+
+	"type": "other",
+
+	"requires": {
+		"MediaWiki": ">=1.43.0"
+	},
+
+	"suggests": {
+		"skins": {
+			"Citizen": ">= 3.14.0"
+		}
+	},
+
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\ObbyWikiFooter\\": "src/"
+	},
+
+	"HookHandlers": {
+		"main": {
+			"class": "MediaWiki\\Extension\\ObbyWikiFooter\\Hooks"
+		}
+	},
+
+	"Hooks": {
+		"BeforePageDisplay": "main",
+		"SkinAfterContent": "main"
+	},
+
+	"ResourceModules": {
+		"ext.ObbyWikiFooter.styles": {
+			"localBasePath": "resources",
+			"styles": "ext.ObbyWikiFooter.styles.css",
+			"targets": [ "desktop", "mobile" ]
+		},
+
+		"ext.ObbyWikiFooter.scripts": {
+			"localBasePath": "resources",
+			"scripts": "ext.ObbyWikiFooter.js",
+			"targets": [ "desktop", "mobile" ]
+		}
+	},
+
+	"config": {
+		"ObbyWikiFooterLogoSrc": {
+			"value": "",
+			"description": "URL for the footer logo image. If not set, falls back to $wgLogos['icon'] or $wgLogo."
+		},
+		"ObbyWikiFooterLogoWidth": {
+			"value": 48,
+			"description": "Width of the footer logo in px."
+		},
+		"ObbyWikiFooterLogoHeight": {
+			"value": 48,
+			"description": "Height of the footer logo in px."
+		},
+		"ObbyWikiFooterSiteTitle": {
+			"value": "",
+			"description": "Site title displayed in the footer. If empty, uses $wgSitename."
+		},
+		"ObbyWikiFooterDescription": {
+			"value": "",
+			"description": "Description text shown below the site title. Can be empty."
+		},
+		"ObbyWikiFooterTagline": {
+			"value": "",
+			"description": "Tagline/disclaimer text shown at the bottom of the footer."
+		},
+        "ObbyWikiFooterShowObbyWikiParternship": {
+			"value": true,
+			"description": "Show the ObbyWiki logo next to the wiki's logo."
+		},
+        "ObbyWikiFooterIsInterwikiProject": {
+			"value": false,
+			"description": "Set to true if this wiki is part of the Obby Interwiki Project or the ObbyWiki Interwiki Project."
+		}
+	}
+}

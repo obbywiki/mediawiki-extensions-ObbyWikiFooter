@@ -1,0 +1,99 @@
+footer.citizen-footer:not(.obbywiki-footer) {
+	display: none !important;
+}
+
+.obbywiki-footer {
+	display: block !important;
+    margin: auto;
+}
+
+.obbywiki-footer-partner-cross {
+	margin: 0 10px;
+	opacity: 0.5;
+}
+
+.obbywiki-partner-logo {
+	width: auto;
+	max-width: 150px;
+}
+
+.ow-logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.ow-footer-icons-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	align-items: center;
+}
+
+.ow-footer-icons-list li {
+	margin: 0;
+	padding: 0;
+}
+
+.citizen-footer__sitetitle .mw-logo-wordmark {
+    margin: 4px 0px;
+}
+
+.ow-footer-icon-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 4px;
+	background: transparent;
+	transition: background-color 0.2s ease, transform 0.2s ease, opacity 0.2s ease;
+	opacity: 0.6;
+}
+
+
+.ow-footer-icon-btn img,
+.ow-footer-icon-btn svg {
+	display: block;
+	max-height: 31px;
+	width: auto;
+	object-fit: contain;
+}
+
+#footer-icons a {
+    background-color: transparent !important;
+} /* override default citizen css */
+
+.ow-footer-icon-btn:hover {
+	opacity: 1;
+}
+
+.citizen-footer a svg {
+    color: var(--color-emphasized)
+}
+
+.citizen-footer__social-interwiki {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 32px;
+	padding-top: 16px;
+}
+
+.footer-social {
+	display: flex;
+	gap: 12px;
+}
+
+.footer-interwiki-note {
+	font-size: 0.85em;
+	color: var(--color-subtle);
+}
+
+@media screen and (max-width: 768px) {
+	.citizen-footer__social-interwiki {
+		flex-direction: column;
+		gap: 16px;
+		text-align: center;
+	}
+}

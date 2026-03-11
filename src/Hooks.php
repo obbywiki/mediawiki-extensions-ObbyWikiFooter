@@ -40,7 +40,7 @@ class Hooks {
 
 	// constructs footer HTML (main)
 	private static function constructFooterHTML( $config, Skin $skin ): string {
-		$logoSRC = $config->get( 'ObbyWikiFooterlogoSRC' );
+		$logoSRC = $config->get( 'ObbyWikiFooterLogoSRC' );
 		if ( $logoSRC === '' ) {
 			$mwLogos = $config->get( 'Logos' );
 			if ( isset( $mwLogos['icon'] ) ) {

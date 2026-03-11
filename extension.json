@@ -50,7 +50,7 @@
 	},
 
 	"config": {
-		"ObbyWikiFooterLogoSrc": {
+		"ObbyWikiFooterLogoSRC": {
 			"value": "",
 			"description": "URL for the footer logo image. If not set, falls back to $wgLogos['icon'] or $wgLogo."
 		},

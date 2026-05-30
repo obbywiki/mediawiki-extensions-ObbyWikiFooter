@@ -37,6 +37,33 @@ footer.citizen-footer:not(.obbywiki-footer) {
 	padding: 0;
 }
 
+.citizen-footer__bottom {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+#footer-tagline {
+	flex: 1;
+	min-width: 0;
+	font-size: 0.85em;
+	line-height: 1.3;
+	color: var(--color-subtle);
+	transition: opacity 0.2s ease, font-size 0.2s ease;
+}
+
+.citizen-footer__bottom.ow-footer-icons-row--active #footer-tagline {
+	font-size: 0.7em;
+	opacity: 0.4;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+#footer-icons {
+	flex-shrink: 0;
+}
+
 .citizen-footer__sitetitle .mw-logo-wordmark {
     margin: 4px 0px;
 }
@@ -68,8 +95,8 @@ footer.citizen-footer:not(.obbywiki-footer) {
 	opacity: 1;
 }
 
-.citizen-footer a svg {
-    color: var(--color-emphasized)
+.citizen-footer a.ow-footer-icon-btn svg {
+	color: var(--color-emphasized);
 }
 
 .ow-footer-dgo-badge {
@@ -130,13 +157,94 @@ footer.citizen-footer:not(.obbywiki-footer) {
 	color: #fff;
 }
 
-.ow-footer-dgo-badge:hover,
+.ow-footer-dgo-badge.is-active,
 .ow-footer-dgo-badge:focus-visible {
 	padding: 5px 10px 5px 6px;
 }
 
-.ow-footer-dgo-badge:hover .ow-footer-dgo-badge__text,
+.ow-footer-dgo-badge.is-active .ow-footer-dgo-badge__text,
 .ow-footer-dgo-badge:focus-visible .ow-footer-dgo-badge__text {
+	max-width: 140px;
+	opacity: 1;
+	margin-left: 8px;
+}
+
+.ow-footer-mw-badge {
+	display: inline-flex;
+	align-items: center;
+	height: 34px;
+	padding: 5px;
+	background-color: transparent !important;
+	border-radius: 4px;
+	overflow: hidden;
+	text-decoration: none !important;
+	opacity: 1;
+	transition: padding 0.25s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.ow-footer-mw-badge__logo {
+	display: flex;
+	flex-shrink: 0;
+	align-items: center;
+	justify-content: center;
+	width: 24px;
+	height: 24px;
+}
+
+.ow-footer-mw-badge__logo svg {
+	display: block;
+	width: 24px;
+	height: 24px;
+	max-height: none;
+	filter: grayscale(1) brightness(0);
+	transition: filter 0.2s ease;
+}
+
+html.skin-theme-clientpref-night .ow-footer-mw-badge__logo svg {
+	filter: grayscale(1) brightness(0) invert(1);
+}
+
+.ow-footer-mw-badge__text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	line-height: 1.15;
+	overflow: hidden;
+	max-width: 0;
+	opacity: 0;
+	margin-left: 0;
+	white-space: nowrap;
+	transition: max-width 0.25s ease, opacity 0.2s ease, margin-left 0.25s ease;
+}
+
+.ow-footer-mw-badge__prefix {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	font-size: 9px;
+	font-weight: 400;
+	color: var(--color-emphasized);
+}
+
+.ow-footer-mw-badge__brand {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	color: var(--color-emphasized);
+}
+
+.ow-footer-mw-badge.is-active,
+.ow-footer-mw-badge:focus-visible {
+	padding: 5px 10px 5px 6px;
+	background-color: var(--color-surface-2, rgba(127, 127, 127, 0.12)) !important;
+	border-color: transparent;
+}
+
+.ow-footer-mw-badge.is-active .ow-footer-mw-badge__logo svg,
+.ow-footer-mw-badge:focus-visible .ow-footer-mw-badge__logo svg {
+	filter: none;
+}
+
+.ow-footer-mw-badge.is-active .ow-footer-mw-badge__text,
+.ow-footer-mw-badge:focus-visible .ow-footer-mw-badge__text {
 	max-width: 140px;
 	opacity: 1;
 	margin-left: 8px;

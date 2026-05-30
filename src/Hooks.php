@@ -151,11 +151,16 @@ class Hooks {
 		$svgDir = __DIR__ . '/../resources/svgs/';
 		$ccbysaSvg = file_exists( $svgDir . 'ccbysa.svg' ) ? file_get_contents( $svgDir . 'ccbysa.svg' ) : '';
 		$mwSvg = file_exists( $svgDir . 'mediawiki.svg' ) ? file_get_contents( $svgDir . 'mediawiki.svg' ) : '';
-		$doSvg = file_exists( $svgDir . 'digitalocean.svg' ) ? file_get_contents( $svgDir . 'digitalocean.svg' ) : '';
+		$dgoSvg = file_exists( $svgDir . 'digitalocean.svg' ) ? file_get_contents( $svgDir . 'digitalocean.svg' ) : '';
 
 		$html .= '<li id="footer-copyrightico"><a href="https://obbywiki.com/wiki/OW:Attributions" class="ow-footer-icon-btn" target="_blank" title="ObbyWiki Attributions">' . $ccbysaSvg . '</a></li>';
 		$html .= '<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/" class="ow-footer-icon-btn" target="_blank" title="Powered by MediaWiki">' . $mwSvg . '</a></li>';
-		$html .= '<li id="footer-hostedbyico"><a href="https://www.digitalocean.com/?refcode=4bec7a43ac62" class="ow-footer-icon-btn" target="_blank" title="Hosted by DigitalOcean">' . $doSvg . '</a></li>';
+		$html .= '<li id="footer-hostedbyico"><a href="https://www.digitalocean.com/?refcode=4bec7a43ac62" class="ow-footer-dgo-badge" target="_blank" rel="noopener" title="Hosted by DigitalOcean">';
+		$html .= '<span class="ow-footer-dgo-badge__logo" aria-hidden="true">' . $dgoSvg . '</span>';
+		$html .= '<span class="ow-footer-dgo-badge__text">';
+		$html .= '<span class="ow-footer-dgo-badge__prefix">Hosted by</span>';
+		$html .= '<span class="ow-footer-dgo-badge__brand">DigitalOcean</span>';
+		$html .= '</span></a></li>';
 
 		$html .= '</ul>';
 		$html .= '</nav>';

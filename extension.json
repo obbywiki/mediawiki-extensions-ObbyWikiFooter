@@ -4,7 +4,7 @@
 	"name": "ObbyWikiFooter",
 	"description": "Designed for Citizen. Replaces the default Citizen footer with a custom footer HTML for the Obby Wiki.",
 	"author": ["[https://obbywiki.com ObbyWiki]", "WOU", "Wolfite"],
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"license-name": "MIT",
 	"url": "https://github.com/obbywiki/mediawiki-extensions-ObbyWikiFooter",
 

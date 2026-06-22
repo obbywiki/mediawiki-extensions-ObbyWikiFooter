@@ -196,12 +196,7 @@ footer.citizen-footer:not(.obbywiki-footer) {
 	width: 24px;
 	height: 24px;
 	max-height: none;
-	filter: grayscale(1) brightness(0);
 	transition: filter 0.2s ease;
-}
-
-html.skin-theme-clientpref-night .ow-footer-mw-badge__logo svg {
-	filter: grayscale(1) brightness(0) invert(1);
 }
 
 .ow-footer-mw-badge__text {
@@ -236,11 +231,6 @@ html.skin-theme-clientpref-night .ow-footer-mw-badge__logo svg {
 	padding: 5px 10px 5px 6px;
 	background-color: var(--color-surface-2, rgba(127, 127, 127, 0.12)) !important;
 	border-color: transparent;
-}
-
-.ow-footer-mw-badge.is-active .ow-footer-mw-badge__logo svg,
-.ow-footer-mw-badge:focus-visible .ow-footer-mw-badge__logo svg {
-	filter: none;
 }
 
 .ow-footer-mw-badge.is-active .ow-footer-mw-badge__text,

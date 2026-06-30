@@ -23,10 +23,10 @@ class FooterLinks {
 			'community' => [
 				'title' => 'Community',
 				'links' => [
-					[ 'label' => 'Community Portal', 'page' => 'Special:Community' ],
+					// [ 'label' => 'Community Portal', 'page' => 'Special:Community' ],
 					[ 'label' => 'Obby Forum', 'page' => 'Obby_Wiki:Forum' ],
-					[ 'label' => 'For MediaWiki developers', 'page' => 'Obby_Wiki:About' ],
-					[ 'label' => 'For Obby developers', 'page' => 'Obby_Wiki:About' ],
+					// [ 'label' => 'For MediaWiki developers', 'page' => 'Obby_Wiki:About' ],
+					// [ 'label' => 'For Obby developers', 'page' => 'Obby_Wiki:About' ],
 				],
 			],
 			'project' => [
@@ -34,15 +34,15 @@ class FooterLinks {
 				'links' => [
 					[ 'label' => 'About the Obby Wiki', 'page' => 'Obby_Wiki:About' ],
 					[ 'label' => 'Wiki Staff', 'page' => 'Obby_Wiki:About/Staff' ],
-					[ 'label' => 'Announcements', 'page' => 'Blog:Timeline' ],
-					[ 'label' => 'Sitemap', 'page' => 'Special:AllPages' ],
+					// [ 'label' => 'Announcements', 'page' => 'Blog:Timeline' ],
+					// [ 'label' => 'Sitemap', 'page' => 'Special:AllPages' ],
 				],
 			],
 			'contributing' => [
 				'title' => 'Contributing',
 				'links' => [
 					[ 'label' => 'How to Contribute', 'page' => 'Help:Contributing' ],
-					[ 'label' => 'Style Guide', 'page' => 'Obby_Wiki:Manual_of_style' ],
+					[ 'label' => 'Style Guide', 'page' => 'Obby_Wiki:Style_guide' ],
 					[ 'label' => 'Rules & Guidelines', 'page' => 'Obby_Wiki:Rules' ],
 					[ 'label' => 'Eligibility requirements', 'page' => 'Obby_Wiki:Eligibility_requirements' ],
 					[ 'label' => 'Wanted pages', 'page' => 'Special:WantedPages' ],
@@ -52,8 +52,8 @@ class FooterLinks {
 				'title' => 'Legal',
 				'links' => [
 					[ 'label' => 'Privacy Policy', 'page' => 'Obby_Wiki:Privacy_policy' ],
-					[ 'label' => 'Terms of Service', 'page' => 'Obby_Wiki:Terms_of_service' ],
-					[ 'label' => 'Cookies', 'page' => 'Obby_Wiki:Privacy_policy#Use_of_cookies' ],
+					// [ 'label' => 'Terms of Service', 'page' => 'Obby_Wiki:Terms_of_service' ],
+					// [ 'label' => 'Cookies', 'page' => 'Obby_Wiki:Privacy_policy#Use_of_cookies' ],
 					[ 'label' => 'Licensing & Attributions', 'page' => 'Obby_Wiki:Attributions' ],
 					[ 'label' => 'Disclaimers', 'page' => 'Obby_Wiki:General_disclaimer' ],
 				],

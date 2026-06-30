@@ -52,8 +52,8 @@ class FooterLinks {
 				'title' => 'Legal',
 				'links' => [
 					[ 'label' => 'Privacy Policy', 'page' => 'Obby_Wiki:Privacy_policy' ],
-					// [ 'label' => 'Terms of Service', 'page' => 'Obby_Wiki:Terms_of_service' ],
-					// [ 'label' => 'Cookies', 'page' => 'Obby_Wiki:Privacy_policy#Use_of_cookies' ],
+					[ 'label' => 'Terms of Use', 'page' => 'Obby_Wiki:Terms_of_Use' ],
+					[ 'label' => 'Cookies', 'page' => 'Obby_Wiki:Privacy_policy#Use_of_cookies' ],
 					[ 'label' => 'Licensing & Attributions', 'page' => 'Obby_Wiki:Attributions' ],
 					[ 'label' => 'Disclaimers', 'page' => 'Obby_Wiki:General_disclaimer' ],
 				],

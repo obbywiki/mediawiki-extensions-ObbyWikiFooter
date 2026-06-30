@@ -64,7 +64,7 @@ class FooterLinks {
 	private static function makeHubLink( string $page, string $label ): string {
 		$url = self::LINK_BASE . wfUrlencode( str_replace( ' ', '_', $page ) );
 		return '<a href="' . htmlspecialchars( $url, ENT_QUOTES )
-			. '" target="_blank" rel="noopener">'
+			. '">' // TODO target="_blank" rel="noopener" on non-obby.wiki sites
 			. htmlspecialchars( $label ) . '</a>';
 	}
 

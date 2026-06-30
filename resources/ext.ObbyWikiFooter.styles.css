@@ -174,7 +174,7 @@ footer.citizen-footer:not(.obbywiki-footer) {
 	align-items: center;
 	height: 34px;
 	padding: 5px;
-	background-color: transparent !important;
+	background-color: #FFFFFF !important;
 	border-radius: 4px;
 	overflow: hidden;
 	text-decoration: none !important;
@@ -216,20 +216,19 @@ footer.citizen-footer:not(.obbywiki-footer) {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 	font-size: 9px;
 	font-weight: 400;
-	color: var(--color-emphasized);
+	color: black;
 }
 
 .ow-footer-mw-badge__brand {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	font-weight: 600;
-	color: var(--color-emphasized);
+	color: black;
 }
 
 .ow-footer-mw-badge.is-active,
 .ow-footer-mw-badge:focus-visible {
 	padding: 5px 10px 5px 6px;
-	background-color: var(--color-surface-2, rgba(127, 127, 127, 0.12)) !important;
 	border-color: transparent;
 }
 

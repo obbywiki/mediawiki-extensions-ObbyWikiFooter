@@ -61,8 +61,24 @@ class FooterLinks {
 		];
 	}
 
+	private static function buildHubUrl( string $page ): string {
+		$fragment = '';
+		if ( str_contains( $page, '#' ) ) {
+			[ $page, $fragmentPart ] = explode( '#', $page, 2 );
+			$fragment = '#' . wfUrlencode( str_replace( ' ', '_', $fragmentPart ) );
+		}
+
+		$query = '';
+		if ( str_contains( $page, '?' ) ) {
+			[ $page, $queryPart ] = explode( '?', $page, 2 );
+			$query = '?' . $queryPart;
+		}
+
+		return self::LINK_BASE . wfUrlencode( str_replace( ' ', '_', $page ) ) . $query . $fragment;
+	}
+
 	private static function makeHubLink( string $page, string $label ): string {
-		$url = self::LINK_BASE . wfUrlencode( str_replace( ' ', '_', $page ) );
+		$url = self::buildHubUrl( $page );
 		return '<a href="' . htmlspecialchars( $url, ENT_QUOTES )
 			. '">' // TODO target="_blank" rel="noopener" on non-obby.wiki sites
 			. htmlspecialchars( $label ) . '</a>';

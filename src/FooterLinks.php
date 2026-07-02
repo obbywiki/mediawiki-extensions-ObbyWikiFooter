@@ -35,6 +35,7 @@ class FooterLinks {
 					[ 'label' => 'About the Obby Wiki', 'page' => 'Obby_Wiki:About' ],
 					[ 'label' => 'Wiki Staff', 'page' => 'Obby_Wiki:About/Staff' ],
 					[ 'label' => 'Announcements', 'page' => 'Blog:Timeline?category=Announcements' ],
+					[ 'label' => 'Blog', 'page' => 'Blog:Timeline' ],
 					// [ 'label' => 'Sitemap', 'page' => 'Special:AllPages' ],
 				],
 			],

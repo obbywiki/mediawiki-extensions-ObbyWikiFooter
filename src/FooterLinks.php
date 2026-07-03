@@ -25,8 +25,8 @@ class FooterLinks {
 				'links' => [
 					// [ 'label' => 'Community Portal', 'page' => 'Special:Community' ],
 					[ 'label' => 'Obby Forum', 'page' => 'Obby_Wiki:Forum' ],
-					// [ 'label' => 'For MediaWiki developers', 'page' => 'Obby_Wiki:About' ],
-					// [ 'label' => 'For Obby developers', 'page' => 'Obby_Wiki:About' ],
+					[ 'label' => 'For MediaWiki developers', 'page' => 'Obby_Wiki:About/For_developers#For_MediaWiki_Developers' ],
+					[ 'label' => 'For Obby developers', 'page' => 'Obby_Wiki:About/For_developers#For_Roblox_Developers' ],
 				],
 			],
 			'project' => [
@@ -36,7 +36,7 @@ class FooterLinks {
 					[ 'label' => 'Wiki Staff', 'page' => 'Obby_Wiki:About/Staff' ],
 					[ 'label' => 'Announcements', 'page' => 'Blog:Timeline?category=Announcements' ],
 					[ 'label' => 'Blog', 'page' => 'Blog:Timeline' ],
-					// [ 'label' => 'Sitemap', 'page' => 'Special:AllPages' ],
+					[ 'label' => 'All Pages', 'page' => 'Special:AllPages' ],
 				],
 			],
 			'contributing' => [

@@ -63,7 +63,7 @@ class Hooks {
 
 		$footerLinks = self::getSkinFooterLinks( $skin );
 
-		$html = '<footer class="mw-footer citizen-footer obbywiki-footer">';
+		$html = '<footer class="mw-footer citizen-footer obbywiki-footer noprint">';
 		$html .= '<div class="citizen-footer__container">';
 
 		$html .= '<section class="ow-footer-main">';

@@ -154,9 +154,9 @@ class Hooks {
 		$html = '<nav id="footer-icons" class="noprint">';
 		$html .= '<ul class="ow-footer-icons-list">';
 
-		$html .= '<li id="footer-copyrightico"><a href="https://obbywiki.com/wiki/OW:Attributions" class="ow-footer-icon-btn" target="_blank" title="ObbyWiki Attributions">' . $ccbysaSVG . '</a></li>';
+		$html .= '<li id="footer-copyrightico"><a href="https://obby.wiki/OW:Attributions" class="ow-footer-icon-btn" target="_blank" title="ObbyWiki Attributions">' . $ccbysaSVG . '</a></li>';
 		$html .= '<li id="footer-poweredbyico" class="ow-footer-icons-list__badge">';
-		$html .= '<a href="https://obbywiki.com/wiki/Special:Version" class="ow-footer-mw-badge" target="_blank" rel="noopener" title="Powered by MediaWiki">';
+		$html .= '<a href="https://obby.wiki/Special:Version" class="ow-footer-mw-badge" target="_blank" rel="noopener" title="Powered by MediaWiki">';
 		$html .= '<span class="ow-footer-mw-badge__logo" aria-hidden="true">' . $mwSVG . '</span>';
 		$html .= '<span class="ow-footer-mw-badge__text">';
 		$html .= '<span class="ow-footer-mw-badge__prefix">Powered by</span>';
@@ -187,7 +187,7 @@ class Hooks {
 		$html .= '</nav>';
 
 		if ( $config->get( 'ObbyWikiFooterIsInterwikiProject' ) ) {
-			$html .= '<div class="footer-interwiki-note">' . htmlspecialchars( $siteTitle ) . ' is a part of the <a href="https://obbywiki.com/wiki/OW:Interwiki" target="_blank">Obby Interwiki Project</a>.</div>';
+			$html .= '<div class="footer-interwiki-note">' . htmlspecialchars( $siteTitle ) . ' is a part of the <a href="https://obby.wiki/OW:Interwiki" target="_blank">Obby Interwiki Project</a>.</div>';
 		}
 
 		$html .= '</div>';

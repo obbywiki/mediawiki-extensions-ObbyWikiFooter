@@ -34,9 +34,9 @@ class FooterLinks {
 				'links' => [
 					[ 'label' => 'About the Obby Wiki', 'page' => 'Obby_Wiki:About' ],
 					[ 'label' => 'Wiki Staff', 'page' => 'Obby_Wiki:About/Staff' ],
-					[ 'label' => 'Announcements', 'page' => 'Blog:Timeline?category=Announcements' ],
 					[ 'label' => 'Blog', 'page' => 'Blog:Timeline' ],
 					[ 'label' => 'All Pages', 'page' => 'Special:AllPages' ],
+					[ 'label' => 'Status', 'url' => 'https://status.obby.wiki' ],
 				],
 			],
 			'contributing' => [
@@ -78,8 +78,16 @@ class FooterLinks {
 		return self::LINK_BASE . wfUrlencode( str_replace( ' ', '_', $page ) ) . $query . $fragment;
 	}
 
-	private static function makeHubLink( string $page, string $label ): string {
-		$url = self::buildHubUrl( $page );
+	private static function makeLink( array $link ): string {
+		$label = $link['label'] ?? '';
+		if ( isset( $link['url'] ) && $link['url'] !== '' ) {
+			$url = $link['url'];
+		} elseif ( isset( $link['page'] ) && $link['page'] !== '' ) {
+			$url = self::buildHubUrl( $link['page'] );
+		} else {
+			return '';
+		}
+
 		return '<a href="' . htmlspecialchars( $url, ENT_QUOTES )
 			. '">' // TODO target="_blank" rel="noopener" on non-obby.wiki sites
 			. htmlspecialchars( $label ) . '</a>';
@@ -91,7 +99,13 @@ class FooterLinks {
 		$html .= '<ul class="ow-footer-links__list">';
 
 		foreach ( $section['links'] as $link ) {
-			$html .= '<li>' . self::makeHubLink( $link['page'], $link['label'] ) . '</li>';
+			$link_html = self::makeLink( $link );
+
+			if ( $link_html === '' ) {
+				continue;
+			}
+			
+			$html .= '<li>' . $link_html . '</li>';
 		}
 
 		$html .= '</ul>';

@@ -14,7 +14,7 @@ class FooterLinks {
 				'title' => 'Obbies',
 				'links' => [
 					[ 'label' => 'All obbies', 'page' => 'Category:Obby' ],
-					[ 'label' => 'Released this month', 'page' => 'Category:July_2026' ], // TODO: change this to the month of the year
+					[ 'label' => 'Released this month', 'page' => 'Category:August_2026' ], // TODO: change this to the month of the year
 					[ 'label' => 'Community', 'page' => 'Category:Community' ],
 					[ 'label' => 'Difficulties', 'page' => 'Category:Difficulty' ],
 					[ 'label' => 'Random Obby', 'page' => 'Special:RandomInCategory/Obby' ],

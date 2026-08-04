@@ -6,6 +6,10 @@ $( function () {
 		$footer.insertAfter( $relatedPosts.last() );
 	}
 
+	if ( !window.matchMedia( '(hover: hover) and (pointer: fine) and (min-width: 769px)' ).matches ) {
+		return; // skip connections since mobile always has the badges expanded
+	}
+
 	var $bottom = $footer.find( '.citizen-footer__bottom' );
 	var $icons = $footer.find( '#footer-icons' );
 	var $badges = $icons.find( '.ow-footer-mw-badge, .ow-footer-dgo-badge' );

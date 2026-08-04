@@ -280,17 +280,6 @@ footer.citizen-footer:not(.obbywiki-footer) {
 	margin-left: auto;
 }
 
-@media screen and (max-width: 768px) {
-	.citizen-footer__bottom {
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	#footer-icons {
-		margin-left: 0;
-	}
-}
-
 .ow-footer-icon-btn {
 	display: inline-flex;
 	align-items: center;
@@ -460,5 +449,51 @@ footer.citizen-footer:not(.obbywiki-footer) {
 	max-width: 140px;
 	opacity: 1;
 	margin-left: 8px;
+}
+
+/* always expand badges on mobile */
+@media screen and (max-width: 768px) {
+	.obbywiki-footer .citizen-footer__bottom {
+		flex-direction: column;
+		align-items: stretch;
+		justify-content: flex-start;
+		gap: 1rem;
+		margin-top: 0.75rem;
+		padding-bottom: 7.5rem;
+	}
+
+	.obbywiki-footer .citizen-footer__bottom.ow-footer-icons-row--active #footer-tagline,
+	.obbywiki-footer #footer-tagline {
+		flex: none;
+		font-size: 0.75rem;
+		opacity: 1;
+		white-space: normal;
+		overflow: visible;
+		text-overflow: unset;
+	}
+
+	.obbywiki-footer #footer-icons {
+		margin-left: 0;
+		width: 100%;
+	}
+
+	.obbywiki-footer .ow-footer-icons-list {
+		justify-content: center;
+		gap: 0.5rem;
+	}
+
+	.obbywiki-footer .ow-footer-dgo-badge,
+	.obbywiki-footer .ow-footer-mw-badge {
+		padding: 5px 10px 5px 6px;
+		transition: none;
+	}
+
+	.obbywiki-footer .ow-footer-dgo-badge__text,
+	.obbywiki-footer .ow-footer-mw-badge__text {
+		max-width: 140px;
+		opacity: 1;
+		margin-left: 8px;
+		transition: none;
+	}
 }
 

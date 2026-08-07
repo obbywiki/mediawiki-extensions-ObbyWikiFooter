@@ -24,7 +24,7 @@ class FooterLinks {
 				'title' => 'Community',
 				'links' => [
 					// [ 'label' => 'Community Portal', 'page' => 'Special:Community' ],
-					[ 'label' => 'Obby Forum', 'page' => 'Obby_Wiki:Forum' ],
+					// [ 'label' => 'Obby Forum', 'page' => 'Obby_Wiki:Forum' ],
 					[ 'label' => 'For MediaWiki developers', 'page' => 'Obby_Wiki:About/For_developers#For_MediaWiki_Developers' ],
 					[ 'label' => 'For Obby developers', 'page' => 'Obby_Wiki:About/For_developers#For_Roblox_Developers' ],
 				],

@@ -184,9 +184,9 @@ class Hooks {
 
 		$html = '<div class="ow-footer-brand__social">';
 		$html .= '<nav class="footer-social" aria-label="Social media">';
-		$html .= '<a href="https://github.com/obbywiki" target="_blank" rel="noopener" title="ObbyWiki on GitHub" class="ow-footer-icon-btn">' . $githubSVG . '</a>';
 		$html .= '<a href="https://x.com/obbywiki" target="_blank" rel="noopener" title="ObbyWiki on X" class="ow-footer-icon-btn ow-footer-icon-btn--x">' . $xSVG . '</a>';
 		$html .= '<a href="https://discord.gg/vuJsnzKkKY" target="_blank" rel="noopener" title="ObbyWiki on Discord" class="ow-footer-icon-btn">' . $discordSVG . '</a>';
+		$html .= '<a href="https://github.com/obbywiki" target="_blank" rel="noopener" title="ObbyWiki on GitHub" class="ow-footer-icon-btn">' . $githubSVG . '</a>';
 		$html .= '</nav>';
 
 		if ( $config->get( 'ObbyWikiFooterIsInterwikiProject' ) ) {
